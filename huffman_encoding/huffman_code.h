@@ -1,6 +1,6 @@
 //
 // Created by vist on 17-9-26.
-//
+// version 1.0
 // C program for Huffman Coding
 
 #include <stdlib.h>
@@ -160,7 +160,7 @@ void printCodes(struct MinHeapNode* root, int arr[], int top){
     }
 }
 
-void HuffManCodes(char data[], int freq[], int size){
+void HuffManCodes_C(char data[], int freq[], int size){
     struct MinHeapNode* root = buildHuffmanTree(data, freq, size);
     int arr[MAX_TREE_HT], top = 0;
     printCodes(root, arr, top);
