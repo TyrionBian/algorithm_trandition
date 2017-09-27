@@ -24,5 +24,8 @@ int main() {
     printf("Preorder traversal of the constructed AVL"
                    " tree is \n");
     preOrder(root);
+    root = deleteNode(root, 10);
+    printf("\nPreorder traversal after deletion of 10 \n");
+    preOrder(root);
     return 0;
 }
